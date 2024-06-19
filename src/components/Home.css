@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-container {
+  background: #198e5f;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.content-container {
+  z-index: 1;
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 600px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-container h1 {
+  font-size: 44px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.content-container p {
+  font-size: 26px;
+  color: #003366;
+}
+
+.content-container .button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #06a364;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  color: white;
+  border-radius: 10px;
+  margin-right: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.content-container .button:hover {
+  background-color: #06a364;
+  transform: translateY(-3px);
+}
+
+.color {
+  color: #0c9849;
+  font-size: 54px;
+}
+
+.cta-container {
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.cta-text {
+  font-size: 20px;
+  color: #003366;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .content-container {
+    padding: 30px;
+    max-width: 90%;
+    margin: 0;
+  }
+
+  .content-container h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .content-container p {
+    font-size: 22px;
+  }
+
+  .content-container .button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .cta-container {
+    padding: 15px;
+  }
+
+  .cta-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home-container {
+    padding-top: 50px;
+  }
+
+  .content-container {
+    padding: 30px;
+    max-width: 70%;
+  }
+
+  .content-container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .content-container p {
+    font-size: 24px;
+  }
+
+  .content-container .button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .cta-container {
+    padding: 18px;
+  }
+
+  .cta-text {
+    font-size: 20px;
+  }
+}

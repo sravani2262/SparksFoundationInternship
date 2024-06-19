@@ -1,0 +1,54 @@
+
+
+.transactions-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0b934c;
+  text-align: center;
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.transaction:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transaction p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #302828;
+}
+
+.transaction strong {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .transactions-container {
+    padding: 10px;
+  }
+
+  .transaction {
+    padding: 10px;
+  }
+}
